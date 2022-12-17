@@ -13,5 +13,4 @@ Difference:%d
 Product:%d
 Quotient:%d
 Remainder:%d",s,d,p,q,r);
-    
 }
