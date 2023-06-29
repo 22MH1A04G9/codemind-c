@@ -1,20 +1,19 @@
 #include<stdio.h>
-int cn(int k)
+int fun(int n)
 {
-    if(k<0)
+    if(n<0)
     {
         return 0;
     }
-    if(k==0)
+    if(n==0)
     {
         return 1;
     }
-    return cn(k-1)+cn(k-2)+cn(k-3);
+    return fun(n-1)+fun(n-2)+fun(n-3);
 }
 int main()
 {
-    int v,r;
-    scanf("%d",&r);
-    v=cn(r);
-    printf("%d",v);
+    int n;
+    scanf("%d",&n);
+    printf("%d",fun(n));
 }
